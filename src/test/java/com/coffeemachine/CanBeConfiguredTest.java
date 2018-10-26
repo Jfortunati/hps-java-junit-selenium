@@ -36,7 +36,7 @@ public class CanBeConfiguredTest extends TestCase {
     }
 
     // 
-    // Tags: priority:1
+    // Tags: priority:medium
     public void testDisplaySettings() throws Exception {
         scenarioSetup("Display settings");
 
@@ -49,7 +49,7 @@ public class CanBeConfiguredTest extends TestCase {
         score = "pass";
     }
     // 
-    // Tags: priority:0
+    // Tags: priority:high
     public void testDefaultSettings() throws Exception {
         scenarioSetup("Default settings");
 

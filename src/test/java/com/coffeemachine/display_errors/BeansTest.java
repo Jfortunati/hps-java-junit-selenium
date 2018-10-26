@@ -42,7 +42,7 @@ public class BeansTest extends TestCase {
     }
 
     // 
-    // Tags: priority:0
+    // Tags: priority:high
     public void testMessageFillBeansIsDisplayedAfter38CoffeesAreTaken() throws Exception {
         scenarioSetup("Message \"Fill beans\" is displayed after 38 coffees are taken");
 
@@ -53,7 +53,7 @@ public class BeansTest extends TestCase {
         score = "pass";
     }
     // 
-    // Tags: priority:2
+    // Tags: priority:low
     public void testItIsPossibleToTake40CoffeesBeforeThereIsReallyNoMoreBeans() throws Exception {
         scenarioSetup("It is possible to take 40 coffees before there is really no more beans");
 
@@ -70,7 +70,7 @@ public class BeansTest extends TestCase {
         score = "pass";
     }
     // 
-    // Tags: priority:0
+    // Tags: priority:high
     public void testAfterAddingBeansTheMessageFillBeansDisappears() throws Exception {
         scenarioSetup("After adding beans, the message \"Fill beans\" disappears");
 

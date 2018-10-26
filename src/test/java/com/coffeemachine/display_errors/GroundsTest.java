@@ -42,7 +42,7 @@ public class GroundsTest extends TestCase {
     }
 
     // 
-    // Tags: priority:0
+    // Tags: priority:high
     public void testMessageEmptyGroundsIsDisplayedAfter30CoffeesAreTaken() throws Exception {
         scenarioSetup("Message \"Empty grounds\" is displayed after 30 coffees are taken");
 
@@ -53,7 +53,7 @@ public class GroundsTest extends TestCase {
         score = "pass";
     }
     // 
-    // Tags: priority:1
+    // Tags: priority:medium
     public void testWhenTheGroundsAreEmptiedMessageIsRemoved() throws Exception {
         scenarioSetup("When the grounds are emptied, message is removed");
 

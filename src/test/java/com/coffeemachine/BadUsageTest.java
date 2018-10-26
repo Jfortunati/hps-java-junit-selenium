@@ -36,7 +36,7 @@ public class BadUsageTest extends TestCase {
     }
 
     // You keep getting coffee even if the "Empty grounds" message is displayed. That said it's not a fantastic idea, you'll get ground everywhere when you'll decide to empty it.
-    // Tags: priority:2
+    // Tags: priority:low
     public void testFullGroundsDoesNotBlockCoffee() throws Exception {
         scenarioSetup("Full grounds does not block coffee");
 

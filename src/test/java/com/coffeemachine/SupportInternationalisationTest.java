@@ -35,22 +35,8 @@ public class SupportInternationalisationTest extends TestCase {
         driver.quit();
     }
 
-    // 
-    // Tags: priority:1
-    public void testNoMessagesAreDisplayedWhenMachineIsShutDown() throws Exception {
-        scenarioSetup("No messages are displayed when machine is shut down");
-
-        // Given the coffee machine is started
-        actionwords.theCoffeeMachineIsStarted();
-        // When I shutdown the coffee machine
-        actionwords.iShutdownTheCoffeeMachine();
-        // Then message "" should be displayed
-        actionwords.messageMessageShouldBeDisplayed("");
-        score = "pass";
-    }
     public void messagesAreBasedOnLanguage(String language, String readyMessage) throws Exception {
-        // Tags: priority:1
-        // Well, sometimes, you just get a coffee.
+        // Tags: priority:medium
         scenarioSetup("Messages are based on language");
         // When I start the coffee machine using language "<language>"
         actionwords.iStartTheCoffeeMachineUsingLanguageLang(language);
@@ -65,5 +51,20 @@ public class SupportInternationalisationTest extends TestCase {
 
     public void testMessagesAreBasedOnLanguageFrench() throws Exception {
         messagesAreBasedOnLanguage("fr", "Pret");
+    }
+
+
+    // 
+    // Tags: priority:medium
+    public void testNoMessagesAreDisplayedWhenMachineIsShutDown() throws Exception {
+        scenarioSetup("No messages are displayed when machine is shut down");
+
+        // Given the coffee machine is started
+        actionwords.theCoffeeMachineIsStarted();
+        // When I shutdown the coffee machine
+        actionwords.iShutdownTheCoffeeMachine();
+        // Then message "" should be displayed
+        actionwords.messageMessageShouldBeDisplayed("");
+        score = "pass";
     }
 }

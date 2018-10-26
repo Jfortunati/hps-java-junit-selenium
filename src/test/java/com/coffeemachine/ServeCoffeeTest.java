@@ -6,7 +6,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class ServeCoffeeTest extends TestCase {
-    // Tags: sprint:1 JIRA:CMM-1
+    // Tags: sprint:1
     public Actionwords actionwords;
     public WebDriver driver;
     private CBTHelper cbt;
@@ -36,7 +36,7 @@ public class ServeCoffeeTest extends TestCase {
     }
 
     // Well, sometimes, you just get a coffee.
-    // Tags: priority:0
+    // Tags: priority:high
     public void testSimpleUse() throws Exception {
         scenarioSetup("Simple use");
 

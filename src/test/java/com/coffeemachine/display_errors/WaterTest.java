@@ -42,7 +42,7 @@ public class WaterTest extends TestCase {
     }
 
     // 
-    // Tags: priority:0
+    // Tags: priority:high
     public void testMessageFillWaterTankIsDisplayedAfter50CoffeesAreTaken() throws Exception {
         scenarioSetup("Message \"Fill water tank\" is displayed after 50 coffees are taken");
 
@@ -53,7 +53,7 @@ public class WaterTest extends TestCase {
         score = "pass";
     }
     // 
-    // Tags: priority:2
+    // Tags: priority:low
     public void testItIsPossibleToTake10CoffeesAfterTheMessageFillWaterTankIsDisplayed() throws Exception {
         scenarioSetup("It is possible to take 10 coffees after the message \"Fill water tank\" is displayed");
 
@@ -68,7 +68,7 @@ public class WaterTest extends TestCase {
         score = "pass";
     }
     // 
-    // Tags: priority:0
+    // Tags: priority:high
     public void testWhenTheWaterTankIsFilledTheMessageDisappears() throws Exception {
         scenarioSetup("When the water tank is filled, the message disappears");
 
